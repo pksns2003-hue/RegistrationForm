@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION</title>
+</head>
+<link rel="stylesheet" href="./style.css">
+    
+<body>
+    <center>
+    <div class="main">
+    <form onsubmit="formvalid(event)">
+    <h1>REGISTRATION FORM</h1>
+    <div class="formrow">
+    <label>Enter your name:</label>
+    <input type="text" id="name"placeholder="Enter your name"><br><br>
+    </div>
+    <div class="formrow">
+    <label>  Enter your email:</label>
+    <input type="email"id="mail"placeholder="Enter your mail"><br><br>
+    </div>
+    <div class="formrow">
+    <label>Enter your password:</label>
+    <input type="password"id="password"placeholder="Enter your password"><br><br>
+    </div>
+    <div class="formrow">
+    <label>Enter confrim password:</label>
+    <input type="password"id="pass"placeholder="enter confrim password"><br><br>
+    </div>
+    <div class="formrow">
+    <label>Enter your contact:</label>
+    <input type="contact"id="contact"placeholder="enter your contact"><br><br>
+    </div>
+    <div class="gender">
+    <label>Select gender:</label>
+    
+    <input type="radio"name="gender"value="male">male
+    <input type="radio"name="gender"value="female">female
+    <div class="btn">
+    <input type="radio"name="gender"value="others">others
+    <br><br></div>
+    </div>
+    <div class="submit">
+    <button type="submit">Submit</button><br>
+     </div>
+    </form>
+    </div>
+    </center>
+<script>
+    function formvalid() {
+  let name = document.getElementById("name").value.trim();
+  let mail = document.getElementById("mail").value.trim();
+  let password = document.getElementById("password").value.trim();
+  let confirm = document.getElementById("pass").value.trim();
+  let phone = document.getElementById("contact").value.trim();
+  let special = "!@#$*&^><?";
+
+  if (name.length < 3) {
+    alert("please enter valid name ");
+   
+    
+  } else if (![...special].some((char) => password.includes(char))) {
+    alert("password must includes special Characters");
+  }
+   else if (confirm !== password) {
+    alert("please Enter Valid confirm Password");
+  } 
+  else if (contact.length !== 10) {
+    alert("Enter valid mobile Number 1-10");
+  } 
+  else {
+    alert("Successfully Submitted your form");
+  }
+}
+</script>
+
+    
+
+</body>
+</html>
