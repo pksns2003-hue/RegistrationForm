@@ -2,8 +2,9 @@
     width: 450px;
   border: 3px solid rgb(212, 16, 124);
   box-shadow: 0 0 25px rgb(16, 116, 197);
-  background-color: rgba(134, 27, 221, 0.747);
+  background-color: rgba(177, 111, 235, 0.747);
   border-radius: 50px;
+  color: white;
 }
 form .formrow {
   display: grid;
@@ -17,7 +18,7 @@ button {
   border-radius: 10px;
   box-shadow: 0 0 25px purple;
   padding: 10px;
-  background-color:rgb(101, 109, 182);
+  background-color:rgb(13, 133, 212);
   color: black;
 }
 .gender{
